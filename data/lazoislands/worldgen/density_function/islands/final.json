@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:range_choice",
+    "input": "lazoislands:y",
+    "min_inclusive": 128,
+    "max_exclusive": 176,
+    "when_in_range": "lazoislands:islands/layer2/depth_bottom",
+    "when_out_of_range": {
+      "type": "minecraft:range_choice",
+      "input": "lazoislands:y",
+      "min_inclusive": 176,
+      "max_exclusive": 184,
+      "when_in_range": "lazoislands:islands/layer2/depth_top",
+      "when_out_of_range": {
+        "type": "minecraft:range_choice",
+        "input": "lazoislands:y",
+        "min_inclusive": 184,
+        "max_exclusive": 224,
+        "when_in_range": {
+          "type": "minecraft:max",
+          "argument1": "lazoislands:islands/layer2/depth_top",
+          "argument2": "lazoislands:islands/layer3/depth_bottom"
+        },
+        "when_out_of_range": {
+          "type": "minecraft:range_choice",
+          "input": "lazoislands:y",
+          "min_inclusive": 224,
+          "max_exclusive": 232,
+          "when_in_range": {
+            "type": "minecraft:max",
+            "argument1": "lazoislands:islands/layer2/depth_top",
+            "argument2": "lazoislands:islands/layer3/depth_top"
+          },
+          "when_out_of_range": {
+            "type": "minecraft:range_choice",
+            "input": "lazoislands:y",
+            "min_inclusive": 232,
+            "max_exclusive": 272,
+            "when_in_range": "lazoislands:islands/layer3/depth_top",
+            "when_out_of_range": -0.1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": [
+      {
+        "text": "LazoIslands",
+        "color": "#55FFFF",
+        "bold": true
+      },
+      {
+        "text": "\nFloating islands above an endless ocean",
+        "color": "#AAAAAA"
+      }
+    ]
+  }
+}

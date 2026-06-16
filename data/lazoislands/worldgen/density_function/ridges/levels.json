@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:max",
+  "argument1": {
+    "type": "minecraft:range_choice",
+    "input": "lazoislands:y",
+    "min_inclusive": 120,
+    "max_exclusive": 240,
+    "when_in_range": {
+      "type": "minecraft:range_choice",
+      "input": "lazoislands:islands/layer2/noise",
+      "min_inclusive": 0.125,
+      "max_exclusive": 1000000,
+      "when_in_range": 1,
+      "when_out_of_range": 0
+    },
+    "when_out_of_range": 0
+  },
+  "argument2": {
+    "type": "minecraft:range_choice",
+    "input": "lazoislands:y",
+    "min_inclusive": 176,
+    "max_exclusive": 280,
+    "when_in_range": {
+      "type": "minecraft:range_choice",
+      "input": "lazoislands:islands/layer3/noise",
+      "min_inclusive": 0.125,
+      "max_exclusive": 1000000,
+      "when_in_range": 1,
+      "when_out_of_range": 0
+    },
+    "when_out_of_range": 0
+  }
+}

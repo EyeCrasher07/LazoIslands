@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:y_clamped_gradient",
+    "from_y": 223,
+    "to_y": 272,
+    "from_value": 0,
+    "to_value": -1
+  },
+  "argument2": "lazoislands:islands/layer3/offset_top"
+}

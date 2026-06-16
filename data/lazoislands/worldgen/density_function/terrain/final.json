@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:range_choice",
+  "input": {
+    "type": "minecraft:interpolated",
+    "argument": "lazoislands:ridges/final"
+  },
+  "min_inclusive": -0.045,
+  "max_exclusive": 0.045,
+  "when_in_range": "lazoislands:terrain/river_channels",
+  "when_out_of_range": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "minecraft:y",
+      "points": [
+        {
+          "location": 80,
+          "derivative": 0,
+          "value": {
+            "coordinate": "lazoislands:terrain/with_caves",
+            "points": [
+              {
+                "location": -1,
+                "derivative": 1,
+                "value": -1
+              },
+              {
+                "location": 1,
+                "derivative": 1,
+                "value": 1
+              }
+            ]
+          }
+        },
+        {
+          "location": 224,
+          "derivative": 0,
+          "value": {
+            "coordinate": "lazoislands:terrain/with_caves",
+            "points": [
+              {
+                "location": -1,
+                "derivative": 1,
+                "value": -1
+              },
+              {
+                "location": 1,
+                "derivative": 1,
+                "value": 1
+              }
+            ]
+          }
+        },
+        {
+          "location": 240,
+          "derivative": 0,
+          "value": {
+            "coordinate": "lazoislands:terrain/no_caves",
+            "points": [
+              {
+                "location": -1,
+                "derivative": 1,
+                "value": -1
+              },
+              {
+                "location": 1,
+                "derivative": 1,
+                "value": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

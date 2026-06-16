@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:max",
+    "argument1": "lazoislands:islands/layer2/noise",
+    "argument2": "lazoislands:islands/layer3/noise"
+  }
+}
